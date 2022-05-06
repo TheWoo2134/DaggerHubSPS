@@ -1,0 +1,166 @@
+local yes = true
+local plrrr = game.Players.LocalPlayer.Name
+local ScreenGui = Instance.new("ScreenGui")
+local EstTime = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Esttt = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_3 = Instance.new("UICorner")
+local M = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local D = Instance.new("TextLabel")
+local UICorner_5 = Instance.new("UICorner")
+local H = Instance.new("TextLabel")
+local UICorner_6 = Instance.new("UICorner")
+local Minute = Instance.new("TextLabel")
+local Day = Instance.new("TextLabel")
+local Hour = Instance.new("TextLabel")
+local Second = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+EstTime.Name = "EstTime"
+EstTime.Parent = ScreenGui
+EstTime.BackgroundColor3 = Color3.fromRGB(128, 0, 0)
+EstTime.Position = UDim2.new(0.539076924, 0, 0.38427946, 0)
+EstTime.Size = UDim2.new(0, 472, 0, 188)
+EstTime.Active = true
+EstTime.Draggable = true
+
+UICorner.Parent = EstTime
+
+Esttt.Name = "Esttt"
+Esttt.Parent = EstTime
+Esttt.BackgroundColor3 = Color3.fromRGB(128, 0, 0)
+Esttt.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Esttt.Position = UDim2.new(0.080508478, 0, 0.648936212, 0)
+Esttt.Size = UDim2.new(0, 96, 0, 50)
+Esttt.Font = Enum.Font.PatrickHand
+Esttt.Text = "0"
+Esttt.TextColor3 = Color3.fromRGB(0, 0, 0)
+Esttt.TextSize = 39.000
+
+UICorner_2.Parent = Esttt
+
+TextLabel.Parent = EstTime
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.Size = UDim2.new(0, 472, 0, 50)
+TextLabel.Font = Enum.Font.PatrickHand
+TextLabel.Text = "Dagger's SPS"
+TextLabel.TextColor3 = Color3.fromRGB(128, 0, 0)
+TextLabel.TextSize = 41.000
+
+UICorner_3.Parent = TextLabel
+
+M.Name = "M"
+M.Parent = EstTime
+M.BackgroundColor3 = Color3.fromRGB(128, 0, 0)
+M.BorderColor3 = Color3.fromRGB(0, 0, 0)
+M.Position = UDim2.new(0.283898294, 0, 0.648936212, 0)
+M.Size = UDim2.new(0, 96, 0, 50)
+M.Font = Enum.Font.PatrickHand
+M.Text = "0"
+M.TextColor3 = Color3.fromRGB(0, 0, 0)
+M.TextSize = 39.000
+
+UICorner_4.Parent = M
+
+D.Name = "D"
+D.Parent = EstTime
+D.BackgroundColor3 = Color3.fromRGB(128, 0, 0)
+D.BorderColor3 = Color3.fromRGB(0, 0, 0)
+D.Position = UDim2.new(0.705508471, 0, 0.648936212, 0)
+D.Size = UDim2.new(0, 96, 0, 50)
+D.Font = Enum.Font.PatrickHand
+D.Text = "0"
+D.TextColor3 = Color3.fromRGB(0, 0, 0)
+D.TextSize = 39.000
+
+UICorner_5.Parent = D
+
+H.Name = "H"
+H.Parent = EstTime
+H.BackgroundColor3 = Color3.fromRGB(128, 0, 0)
+H.BorderColor3 = Color3.fromRGB(0, 0, 0)
+H.Position = UDim2.new(0.493644059, 0, 0.648936212, 0)
+H.Size = UDim2.new(0, 96, 0, 50)
+H.Font = Enum.Font.PatrickHand
+H.Text = "0"
+H.TextColor3 = Color3.fromRGB(0, 0, 0)
+H.TextSize = 39.000
+
+UICorner_6.Parent = H
+
+Minute.Name = "Minute"
+Minute.Parent = EstTime
+Minute.BackgroundColor3 = Color3.fromRGB(128, 0, 0)
+Minute.Position = UDim2.new(0.290254205, 0, 0.287234068, 0)
+Minute.Size = UDim2.new(0, 89, 0, 50)
+Minute.Font = Enum.Font.PatrickHand
+Minute.Text = "Minute"
+Minute.TextColor3 = Color3.fromRGB(0, 0, 0)
+Minute.TextSize = 32.000
+
+Day.Name = "Day"
+Day.Parent = EstTime
+Day.BackgroundColor3 = Color3.fromRGB(128, 0, 0)
+Day.Position = UDim2.new(0.705508411, 0, 0.287234068, 0)
+Day.Size = UDim2.new(0, 89, 0, 50)
+Day.Font = Enum.Font.PatrickHand
+Day.Text = "Day"
+Day.TextColor3 = Color3.fromRGB(0, 0, 0)
+Day.TextSize = 32.000
+
+Hour.Name = "Hour"
+Hour.Parent = EstTime
+Hour.BackgroundColor3 = Color3.fromRGB(128, 0, 0)
+Hour.Position = UDim2.new(0.493644089, 0, 0.287234068, 0)
+Hour.Size = UDim2.new(0, 89, 0, 50)
+Hour.Font = Enum.Font.PatrickHand
+Hour.Text = "Hour"
+Hour.TextColor3 = Color3.fromRGB(0, 0, 0)
+Hour.TextSize = 32.000
+
+Second.Name = "Second"
+Second.Parent = EstTime
+Second.BackgroundColor3 = Color3.fromRGB(128, 0, 0)
+Second.Position = UDim2.new(0.086864382, 0, 0.287234068, 0)
+Second.Size = UDim2.new(0, 89, 0, 50)
+Second.Font = Enum.Font.PatrickHand
+Second.Text = "Second"
+Second.TextColor3 = Color3.fromRGB(0, 0, 0)
+Second.TextSize = 32.000
+
+-- Scripts:
+
+local function QRKK_fake_script() -- Esttt.LocalScript 
+	local script = Instance.new('LocalScript', Esttt)
+
+	local function TTTL_fake_script() -- Esttt.Script 
+		local script = Instance.new('Script', Esttt)
+	
+		local strength = game.Players.LocalPlayer.leaderstats.Strength
+		local m = script.Parent.Parent.M
+		local D = script.Parent.Parent.D
+		local H = script.Parent.Parent.H
+	
+		while wait() do 
+			Before = strength.value 
+			wait (1)
+			After =  strength.value 
+			After = After - Before
+			wait(1)
+			script.Parent.Text = After
+			m.Text = After * 60
+			H.Text = After * 3600
+			D.Text = After * 86400
+		end
+	end
+	coroutine.wrap(TTTL_fake_script)()
+end
+coroutine.wrap(QRKK_fake_script)()
